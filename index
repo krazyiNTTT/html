@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Spain</title>
+    <link rel="stylesheet"  href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>MARIUS HREBENCIUC</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+            
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+                   
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/aircraft.png">
+                        </div>
+                        
+                        <div class="subtitle">
+                            Spain is always a good idea! 
+                        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+                   
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/aircraft.png">
+                        </div>
+                        
+                        <div class="subtitle">
+                            In the Sagrada Familia, everything is providential.! 
+                        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+                   
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/aircraft.png">
+                        </div>
+                        
+                        <div class="subtitle">
+                            The Magic of Montjuic!
+                        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+                   
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/aircraft.png">
+                        </div>
+                        
+                        <div class="subtitle">
+                            Valencia is authentic pure contrast! 
+                        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+                   
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/aircraft.png">
+                        </div>
+                        
+                        <div class="subtitle">
+                            Ready, Steady, Ibiza! 
+                        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+                   
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/aircraft.png">
+                        </div>
+                        
+                        <div class="subtitle">
+                            Ibiza is more than an island, It's a state of mind!
+                        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                    </div>
+                </div>
+
+            </div>
+        </div>    
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+           portfolioItem.childNodes[1].classList.add('img-darken');
+        
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+           portfolioItem.childNodes[1].classList.remove('img-darken');
+        
+        })
+    })
+</script>
+<footer id="main-footer">
+	<p>Copyright &copy; 2020, Marius Hrebenciuc</p>
+</footer>
+</html>
